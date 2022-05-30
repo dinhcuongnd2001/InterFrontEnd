@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* common */
+
+.box-flex
+{
+    display: flex;
+}
+
+/* nav */
+.nav
+{
+    background: black;
+    flex: 0 0 10%;
+    height: 100vh;
+}
+
+.item
+{
+    padding: 10px;
+    color: #fff;
+    font-size: 1.4rem;
+    position: relative;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.item::after{
+    content: "";
+    border: 1px solid #333;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -2px;
+}
+
+
+
+/* content */
+.content
+{   
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 200px;
+    flex: 0 0 90%;
+    height: 100vh;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+}
+
+.header
+{
+    height: 20vh;
+    margin-bottom: 30px;
+}
+.title
+{
+    align-items: center; 
+}
+.title-icon
+{
+    width: 100px;
+}
+.title-decs
+{
+    line-height: 100px;
+    font-size: 100px;
+}
+
+.decs
+{
+    font-size: 30px;
+    max-width: 100%;
+}
+
+.decs span{
+    color: red;
+}
+
+/* about */
+
+.about
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #EFEFEF;
+    height: 210px;
+    margin-bottom: 30px;
+}
+
+.about-title
+{
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.about-decs
+{   
+    font-weight: 400;
+    align-items: center;
+    max-width: 972px;
+}
+
+/* List-decs */
+
+.list-decs
+{   
+    display: flex;
+}
+.item-decs
+{
+    display: flex;
+    flex: 0 0 33.33%;
+    flex-direction: column;
+    padding-right: 40px;
+}
+.item-decs_heading
+{
+    font-weight: 700;
+    font-size: 24px;
+}
+.item-decs_content
+{
+    display: flex;
+}
+.img
+{
+    width: 128px;
+    flex: 0 0 20%;
+}
+.para
+{
+
+}
+.item-decs_para
+{
+
+}
+
+/* footer */
+
+.footer
+{
+    position: absolute;
+    bottom: 0;
+    /* padding: 20px; */
+    width: 100%;
+    bottom: 0;
+    height: 79px;
+}
+
+.footer::before{
+    content: "";
+    border: 1px solid #888;
+    width: 100%;
+    position: absolute;
+}
+
+.footer-decs
+{
+    color: #3E3E3E;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 400;
+    top: 30px;
+    left: 100px;
+}
